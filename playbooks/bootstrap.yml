@@ -1,13 +1,12 @@
 ---
 - hosts: all
-  remote_user: camronlevanger
+  remote_user: jdsouza
   sudo: yes
   vars:
-    home_user: camronlevanger
+    home_user: jdsouza
     workspace: /home/{{ home_user }}/Documents
-    git_name: Camron Levanger
-    git_email: clevanger@insidesales.com
-
+    git_name: Joanita Dsouza
+    git_email: jdsouza@insidesales.com
   tasks:
     - name: Update APT package cache
       action: apt update_cache=yes
